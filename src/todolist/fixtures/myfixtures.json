@@ -1,0 +1,45 @@
+[
+    {
+      "model": "todolist.category",
+      "pk": 1,
+      "fields": {
+        "name": "General"
+      }
+    },
+    {
+      "model": "todolist.category",
+      "pk": 2,
+      "fields": {
+        "name": "Personal"
+      }
+    },
+    {
+        "model": "todolist.category",
+        "pk": 3,
+        "fields": {
+          "name": "Work"
+        }
+    },
+    {
+        "model": "todolist.category",
+        "pk": 4,
+        "fields": {
+          "name": "School"
+        }
+    },
+    {
+        "model": "todolist.category",
+        "pk": 5,
+        "fields": {
+          "name": "Cleaning"
+        }
+    },
+    {
+        "model": "todolist.category",
+        "pk": 6,
+        "fields": {
+          "name": "Other"
+        }
+    }
+      
+  ]

@@ -1,0 +1,39 @@
+
+{% load static %}
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#" style="margin-left: 12px;">Event Managment System</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav justify-content-end" style="margin-right: 120px">
+                    {% if user.is_authenticated %}
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="far fa-user-circle fa-lg rounded-circle align-self-center mr-2" style="width: 32px;"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h6 class="dropdown-item">{{ user.username }}</h6>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-item">{{ user.email }}</h6>
+                        <div class="dropdown-divider"></div>
+                        <a href="{% url 'logout' %}" class="dropdown-item">Log Out</a>
+                    </div>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        
+                    </li>
+                    <li class="nav-item">
+            
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</nav>
